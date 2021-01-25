@@ -6,6 +6,7 @@ UX/UI Designer & Web developer
 ### Contacts:
 
 - E-mail:  _fl@nerokore.com_
+- Skype: _nerokore_
 - Telegram:  [_@nerokore_](https://t.me/nerokore)
 - LinkedIn:  [_nerokore_](https://www.linkedin.com/in/nerokore)
 - GitHub:  [_nerokore_](https://github.com/nerokore)
