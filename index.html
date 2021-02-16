@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Nikita Poterukhin </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter',sans-serif;
+        }
+        header {
+            margin-top: 80px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        header .logo img {
+            width: 50px;
+            height: 50px;
+        }
+        header .description p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .about .small {
+            font-size: 24px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        .about .title {
+            font-size: 42px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #6A7EFE;
+            background-image: linear-gradient(45deg, #F86185, #6A7EFE);
+            background-size: 100%;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+        .h2 {
+            font-size: 42px;
+            font-weight: bold;
+            color:rgb(0, 0, 0);
+        }
+        .education .item {
+            padding: 25px;
+            background-color: #F7F7F7;
+        }
+        .education .item .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(0,0,0);
+        }
+        .education .item .etc {
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(0,0,0,0.7);
+        }
+        .skills .item {
+            margin-bottom: 30px;
+        }
+        .skills .item .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(0,0,0);
+        }
+        .skills .item .description {
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(0,0,0,0.7);
+        }
+        .code .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(0,0,0);
+        }
+        .code pre {
+            color:#F86185;
+        }
+        .english .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(0,0,0);
+        }
+        .education, .skills, .code, .english {
+            margin-top: 60px;
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://nerokore.com/wp-content/uploads/2020/04/cropped-nk100x100.png" alt="NeroKore">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="about">
+                <p class="small">Hi, i'm Nikita Poterukhin.</p>
+                <h1 class="title">I’m UX/UI Designer. Make branding, web-design, mobile application design, graphic design and web-development.</h1>
+            </div>
+
+            <div class="education">
+                <h2 class="h2">Graduation</h2>
+                <div class="item">
+                    <p class="title">International University «MITSO»</p>
+                    <p class="etc">Gomel, 2016-2020</p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2 class="h2">Skills</h2>
+                <div class="item">
+                    <p class="title">Adobe XD, Sketch, Figma</p>
+                    <p class="desc">Basic tools for work. I develop designs for websites, mobile applications and User Interfaces.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Adobe Photoshop</p>
+                    <p class="desc">Graphic design tool. Creation of advertising banners, design of social networks, image processing.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Adobe Illustrator</p>
+                    <p class="desc">I create logos, icons, illustrations. Vectorization of images.</p>
+                </div>
+                <div class="item">
+                    <p class="title">HTML, CSS (Bootstrap 4)</p>
+                </div>
+                <div class="item">
+                    <p class="title">PHP, PHP ORM (redbeanphp)</p>
+                </div>
+                <div class="item">
+                    <p class="title">SQL, MySQL</p>
+                </div>
+            </div>
+
+            <div class="code">
+                <h2 class="h2">Code example</h2>
+                <div class="item">
+                    <p class="title">User logger PHP:</p>
+                    <pre>
+$log_path = './logs/' . date("ymd") . '.txt';
+$user_ip = getenv(REMOTE_ADDR );
+$user_brouser = getenv(HTTP_USER_AGENT);
+$curent_time = date("ymd H:i:s");
+$log_string = "$user_ip $user_brouser $curent_time\r\n";
+$file = fopen($log_path,"a");
+fwrite($file, $log_string, strlen($log_string));
+fclose($file);
+                    </pre>
+                </div>
+            </div>
+
+            <div class="english">
+                <h2 class="h2">English level</h2>
+                <div class="item">
+                    <p class="title">B1 (Intermediate)</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Made with love</p>
+        </div>
+    </footer>
+  </body>
+</html>
