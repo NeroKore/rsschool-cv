@@ -101,6 +101,37 @@
         footer {
             text-align: center;
         }
+        .about__img {
+            height: 40px;
+            width: 40px;
+            border-radius: 5px;
+        }
+        .contacts ul, .skills ul {
+            padding-left: 0;
+        }
+        .skills li {
+            list-style: none;
+        }
+        .contacts li {
+            font-size: 18px;
+            font-weight: bold;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .contacts li a {
+            color: #6A7EFE;
+            text-decoration: none;
+        }
+        .contacts li a:hover {
+            background-color: #6A7EFE;
+            background-image: linear-gradient(45deg, #F86185, #6A7EFE);
+            background-size: 100%;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
     </style>
   </head>
   <body>
@@ -115,48 +146,50 @@
     </header>
     <main>
         <div class="container">
-            <div class="about">
+            <section class="about">
                 <p class="small">Hi, i'm Nikita Poterukhin.</p>
-                <h1 class="title">I’m UX/UI Designer. Make branding, web-design, mobile application design, graphic design and web-development.</h1>
-            </div>
+                <h1 class="title"> <img class="about__img" src="https://sun9-22.userapi.com/impf/c637119/v637119597/40af1/lSb9bBVmmfo.jpg?size=2160x2160&quality=96&sign=ca41afe457b6c738ec53bf44fcbd7d19&type=album" alt="Nikita Poterukhin"> I’m UX/UI Designer. Make branding, web-design, mobile application design, graphic design and web-development.</h1>
+            </section>
 
-            <div class="education">
+            <section class="education">
                 <h2 class="h2">Graduation</h2>
                 <div class="item">
                     <p class="title">International University «MITSO»</p>
                     <p class="etc">Gomel, 2016-2020</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="skills">
+            <section class="skills">
                 <h2 class="h2">Skills</h2>
-                <div class="item">
-                    <p class="title">Adobe XD, Sketch, Figma</p>
-                    <p class="desc">Basic tools for work. I develop designs for websites, mobile applications and User Interfaces.</p>
-                </div>
-                <div class="item">
-                    <p class="title">Adobe Photoshop</p>
+                <ul>
+                    <li class="item">
+                        <h3 class="title">Adobe XD, Sketch, Figma</h3>
+                        <p class="desc">Basic tools for work. I develop designs for websites, mobile applications and User Interfaces.</p>
+                    </li>
+                    <li class="item">
+                        <h3 class="title">Adobe Photoshop</h3>
                     <p class="desc">Graphic design tool. Creation of advertising banners, design of social networks, image processing.</p>
-                </div>
-                <div class="item">
-                    <p class="title">Adobe Illustrator</p>
+                    </li>
+                    <li class="item">
+                        <h3 class="title">Adobe Illustrator</h3>
                     <p class="desc">I create logos, icons, illustrations. Vectorization of images.</p>
-                </div>
-                <div class="item">
-                    <p class="title">HTML, CSS (Bootstrap 4)</p>
-                </div>
-                <div class="item">
-                    <p class="title">PHP, PHP ORM (redbeanphp)</p>
-                </div>
-                <div class="item">
-                    <p class="title">SQL, MySQL</p>
-                </div>
-            </div>
+                    </li>
+                    <li class="item">
+                        <h3 class="title">HTML, CSS (Bootstrap 4)</h3>
+                    </li>
+                    <li class="item">
+                        <h3 class="title">PHP, PHP ORM (redbeanphp)</h3>
+                    </li>
+                    <li class="item">
+                        <h3 class="title">SQL, MySQL</h3>
+                    </li>
+                </ul>
+            </section>
 
-            <div class="code">
+            <section class="code">
                 <h2 class="h2">Code example</h2>
                 <div class="item">
-                    <p class="title">User logger PHP:</p>
+                    <h4 class="title">User logger PHP:</h4>
                     <pre>
 $log_path = './logs/' . date("ymd") . '.txt';
 $user_ip = getenv(REMOTE_ADDR );
@@ -168,21 +201,30 @@ fwrite($file, $log_string, strlen($log_string));
 fclose($file);
                     </pre>
                 </div>
-            </div>
+            </section>
 
-            <div class="english">
+            <section class="english">
                 <h2 class="h2">English level</h2>
                 <div class="item">
-                    <p class="title">B1 (Intermediate)</p>
+                    <h5 class="title">B1 (Intermediate)</h5 >
                 </div>
-            </div>
+            </section>
+
+            <section class="contacts">
+                <h2 class="h2">Contacts</h2>
+                <ul>
+                    <li>GitHub: <a href="https://github.com/NeroKore">NeroKore</a></li>
+                    <li>Telegram: <a href="https://t.me/nerokore">@NeroKore</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/nerokore">NeroKore</a></li>
+                </ul>
+            </section>
 
             
         </div>
     </main>
     <footer>
         <div class="container">
-            <p>Made with love</p>
+            <h6>Made with love</h6>
         </div>
     </footer>
   </body>
